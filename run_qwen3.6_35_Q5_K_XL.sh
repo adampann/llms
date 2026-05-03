@@ -1,0 +1,14 @@
+llama-server \
+  -hf unsloth/Qwen3.6-35B-A3B-GGUF:UD-Q5_K_XL \
+  -c 131072 \
+  -n 32768 \
+  --no-context-shift \
+  --temp 0.6 \
+  --top-p 0.95 \
+  --top-k 20 \
+  --min_p 0.0 \
+  --repeat-penalty 1.00 \
+  --presence-penalty 0.00 \
+  --chat-template-kwargs '{"preserve_thinking": true}' \
+  --batch-size 4096 \
+  --ubatch-size 4096
