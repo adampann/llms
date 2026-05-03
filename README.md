@@ -1,0 +1,3 @@
+I'm using this repo to experiement running local llm models. Currently a problem I'm facing is managing the "special sauce" of running local models. There are so may different parameters that can be tweaked that may or may not have some large impact on the performance of a model. One being `thinking / resaoning` for models like qwen.
+I don't always want to have a model spin for 20K tokens for a simple python script. Right now if I want to turn off thinking I need to start the model with a special flag: `--chat-template-kwargs '{"enable_thinking":false}'`. Not hard to do but seems to limit how I can use a model.
+
